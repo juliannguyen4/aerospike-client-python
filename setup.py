@@ -214,6 +214,9 @@ class CClientClean(clean):
 
 setup(
     version=version.strip(),
+    # Package Data Files
+    zip_safe=False,
+    include_package_data=True,
     # Data files
     ext_modules=[
         Extension(
